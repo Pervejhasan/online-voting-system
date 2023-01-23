@@ -17,7 +17,7 @@
     <div class="bg-info py-4 w-50 m-auto rounded">
         <h3 class="text-center p-3">Register Account</h3>
         <div class="container text-center">
-            <form action="">
+            <form action="../actions/register.php" method="post" enctype="multipart/form-data">
                 <div class="mb-3">
                     <input type="text" class="form-control  w-50 m-auto" name="username" placeholder="Enter your name"
                         require>
@@ -44,7 +44,7 @@
 
 
                 <div class="mb-3">
-                    <input type="file" class="form-control  w-50 m-auto" name="photo">
+                    <input type="file" class="form-control  w-50 m-auto" name="img">
                 </div>
 
                 <div class="mb-3">
