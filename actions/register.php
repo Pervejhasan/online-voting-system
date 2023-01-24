@@ -27,7 +27,7 @@ VALUES ('$username', '$mobile', '$password','$image','$std',0,0)";
 if (mysqli_query($conn, $sql)) {
   echo '<script>
   alert("Registration successfully");
-  window.location="../";
+  window.location="../index.php";
   </script>';
 }
 else {

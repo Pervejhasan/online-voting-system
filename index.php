@@ -20,7 +20,7 @@
     <div class="bg-info py-4 w-50 m-auto rounded">
         <h3 class="text-center p-3">Login</h3>
         <div class="container text-center">
-            <form action="">
+            <form action="./actions/login.php" method="post">
                 <div class="mb-3">
                     <input type="text" class="form-control  w-50 m-auto" name="username" placeholder="Enter your name"
                         require>
