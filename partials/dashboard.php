@@ -36,7 +36,7 @@ if($_SESSION['status']==1){
         <h1 class="my-3 text-center">Voting System</h1>
         <hr class=" w-25   m-auto border border-2">
         <!-- =================================================================== -->
-        <div class="row my-5">
+        <div class="row my-5   d-sm-flex flex-sm-column-reverse flex-lg-row ">
             <div class="col-md-2"></div>
             <div class="col-md-5">
                 <?php
@@ -46,7 +46,7 @@ $groups=$_SESSION['groups'];
 for($i=0;$i<count($groups);$i++){
     ?>
 
-                <div class="row">
+                <div class="row mt-5">
                     <div class="col-md-4">
                         <img src="../uploads/<?php echo $groups[$i]['photo'] ;?> " class="group-img rounded rounded-2"
                             alt="group image">
@@ -73,7 +73,7 @@ if($_SESSION['status']==1){
 }
 else{
     ?>
-                    <button class=" btn bg-success my-3 text-white" type="submit">Vote</button>
+                    <button class=" btn bg-danger my-3 text-white" type="submit">Vote</button>
                     <?php  
 }
 ?>
