@@ -1,6 +1,14 @@
 <?php
 
 session_start();
+
+if(!isset($_SESSION['id'])){
+
+    header("location:../index.php");
+}
+
+
+
 $data=$_SESSION['data'];
 if($_SESSION['status']==1){
     $status='<b class="text-success">Voted</b>';
